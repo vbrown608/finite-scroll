@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Finite Scroll",
+  "description": "This extension disables infinite scroll on Twitter and Facebook",
+  "version": "1.0",
+
+  "content_scripts": [ 
+    {
+      "matches": ["*://*.twitter.com/*", "*://*.facebook.com/*"],
+      "js": ["finite-scroll.js"]
+    }
+  ]
+
+}

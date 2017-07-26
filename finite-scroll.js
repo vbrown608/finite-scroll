@@ -1,3 +1,3 @@
-f = getEventListeners(window).scroll[0].listener
-window.removeEventListener('scroll', getEventListeners(window).scroll[0].listener, false)
-window.addEventListener('scroll', f, false)
+document.addEventListener("scroll", function (event) {
+  event.stopPropagation();
+}, true);
